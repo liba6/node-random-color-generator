@@ -5,12 +5,12 @@ const userHue = process.argv[2];
 const userLum = process.argv[3];
 
 const ranColor = color.randomColor({
-    luminosity: userLum,
-    hue: userHue,
+  luminosity: userLum,
+  hue: userHue,
 });
 
 function poundSignDesign(str) {
-    console.log(chalk.hex(ranColor).bold(str));
+  console.log(chalk.hex(ranColor).bold(str));
 }
 
 poundSignDesign('###############################');
