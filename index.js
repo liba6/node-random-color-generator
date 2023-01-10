@@ -23,4 +23,4 @@ poundSignDesign('###############################');
 poundSignDesign('###############################');
 poundSignDesign('###############################');
 
-//console.log(ranColor);
+// console.log(ranColor);
