@@ -9,18 +9,20 @@ const ranColor = color.randomColor({
   hue: userHue,
 });
 
-function poundSignDesign(str) {
-  console.log(chalk.hex(ranColor).bold(str));
+if (userHue === 'ask') {
+  console.log('what color did you want?');
+} else {
+  function poundSignDesign(str) {
+    console.log(chalk.hex(ranColor).bold(str));
+  }
+
+  poundSignDesign(`###############################
+###############################
+###############################
+#####                    #####
+#####      ${ranColor}        #####
+#####                     #####
+###############################
+###############################
+###############################`);
 }
-
-poundSignDesign('###############################');
-poundSignDesign('###############################');
-poundSignDesign('###############################');
-poundSignDesign('#####                     #####');
-poundSignDesign(`#####      ${ranColor}        #####`);
-poundSignDesign('#####                     #####');
-poundSignDesign('###############################');
-poundSignDesign('###############################');
-poundSignDesign('###############################');
-
-// console.log(ranColor);
